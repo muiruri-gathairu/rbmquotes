@@ -119,6 +119,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "rbmquotes"
+    }
+  },
+  "defaultProject": "rbmquotes",
+  "cli": {
+    "analytics": "161168ac-20d9-46ca-9323-38df1f2aaf3a"
+  }
 }
