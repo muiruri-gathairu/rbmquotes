@@ -7,5 +7,6 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'robertmugabe quotes';
-  myFav = 'When one’s goat gets missing, the aroma of a neighbour’s soup gets suspicious.';
+  myFav = this.quotes[0];
+  quotes = [];
 }

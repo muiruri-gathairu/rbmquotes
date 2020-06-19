@@ -4,11 +4,13 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { QuotelistComponent } from './quotelist/quotelist.component';
+import { QlistviewComponent } from './qlistview/qlistview.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    QuotelistComponent
+    QuotelistComponent,
+    QlistviewComponent
   ],
   imports: [
     BrowserModule,
