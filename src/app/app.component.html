@@ -14,15 +14,15 @@
   <div>
     <h6>
       <p><span class="shar">Quote</span> of the day</p>
-      {{myFav}}
+      {{myFav.name}}
     </h6>
   </div>
   <hr/>
   <div class="row">
-    <div class="col-md-8" id="row1"><span class="shar">rbm</span>QUOTES
+    <div class="col-md-8" id="row1"><span class="shar">rbm</span>QUOTES<br/><br/>
       <ul class="lid">
-        <li *ngFor="let quote of quotes">
-          {{ quote }}
+        <li *ngFor="let quote of quotes" id="w123w">
+          {{ quote.name }}<hr id="hre"/>
         </li>
       </ul>
     </div>

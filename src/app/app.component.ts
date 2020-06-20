@@ -10,10 +10,10 @@ import { Quote } from './quote';
 export class AppComponent {
   title = 'robertmugabe quotes';
   quotes = [
-    new Quote('Windstorm'),
-    new Quote('Bombasto'),
-    new Quote('Magneta'),
-    new Quote('Tornado')
+    new Quote('cucu', 'Windstorm'),
+    new Quote('Bombasto', 'ggggg'),
+    new Quote('Magneta', 'dddddd'),
+    new Quote('Tornado','ggggggg')
 
   ];
   myFav = this.quotes[0];
