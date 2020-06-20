@@ -17,6 +17,10 @@ h3,h6 {
 #row1 {
     padding-left: 100px;
 }
+
+#row2 {
+    padding-top: 50px;
+}
  
 .lid {
     list-style: none;
@@ -28,4 +32,12 @@ h3,h6 {
 
 #hre {
     width: 80%;
+}
+
+#hh {
+    padding-bottom: 40px;
+}
+
+input {
+    width: 350px;
 }
