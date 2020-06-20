@@ -8,6 +8,8 @@ import { Quote } from './quote';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
+  [x: string]: any;
+ 
   title = 'robertmugabe quotes';
   quotes = [
     new Quote('liz', 'Cigarette is a pinch of tobacco rolled in a piece of paper with fire on one end and a fool on the other end'),
@@ -17,8 +19,13 @@ export class AppComponent {
 
   ];
   myFav = this.quotes[0] 
-  newQuote(){
-    
+  sharedQuote = [
+    new Quote('username' , 'name')
+  ];
 
+  onAdd() {
+    this.quotes.push();
   }
 }
+
+ 

@@ -1,40 +1,44 @@
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
-  <title></title>
-</head>
-<body>
-  <div class="tle">
-    <h3>{{title}}</h3>
-  </div>
-  <br/>
-  <div>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <title></title>
+  </head>
+  <body>
+    <div class="tle">
+      <h3>{{title}}</h3>
+    </div>
+    <br/>
+    <div>
     <h6>
       <p><span class="shar">Quote</span> of the day</p>
       {{myFav.name}}
     </h6>
-  </div>
-  <hr/>
-  <div class="row">
-    <div class="col-md-8" id="row1"><span class="shar">rbm</span>QUOTES<br/><br/>
-      <ul class="lid">
-        <li *ngFor="let quote of quotes" id="w123w">
-          {{ quote.name }}<br/><span id="hhh">{{quote.username}}</span><hr id="hre"/>
-        </li>
-      </ul>
     </div>
-    <div class="col-md-4" id="row2"><span class="shar">Share</span> Quote
-      <form><br/>
-        <input id="hh" type="text" ng-model="quote.name">
-        <br/><br/>
-        <input type="text" ng-model='quote.username'>
-        <br><br>
-        <button class="btn btn-success" type="submit" (click)="newQuote()">post</button>
+    <hr/>
+    <div class="row">
+       <div class="col-md-8" id="row1"><span class="shar">rbm</span>QUOTES<br/><br/>
+        <ul class="lid">
+          <li *ngFor="let quote of quotes" id="w123w">
+            <span ng-bind="quote.name">{{quote.name}}</span>
+            <br/>
+            <span ng-bind="quote.username" id="hhh">{{quote.username}}</span>
+            <hr id="hre"/>
+          </li>
+        </ul>
+       </div>
+    <div class="col-md-4" id="row2">
+       <span class="shar">Share</span> Quote
+       <form ng-submit="addQuote(quote)" ><br/>
+          <input id="hh" type="text" ng-model="name">
+          <br/><br/>
+          <input type="text" ng-model="username">
+          <br><br>
+          <button class="btn btn-success" type="submit" (click)="onAdd()">post</button>
       </form>
     </div>
   </div>
-</body>
+  </body>
 </html>
