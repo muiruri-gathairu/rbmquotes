@@ -10,12 +10,15 @@ import { Quote } from './quote';
 export class AppComponent {
   title = 'robertmugabe quotes';
   quotes = [
-    new Quote('cucu', 'Windstorm'),
-    new Quote('Bombasto', 'ggggg'),
-    new Quote('Magneta', 'dddddd'),
-    new Quote('Tornado','ggggggg')
+    new Quote('liz', 'Cigarette is a pinch of tobacco rolled in a piece of paper with fire on one end and a fool on the other end'),
+    new Quote('Bombasto', 'When one’s goat gets missing, the aroma of a neighbour’s soup gets suspicious'),
+    new Quote('ninja', 'Sometimes you look back at girls you spent money on, rather than send it to your mum, and you realise witchcraft is real'),
+    new Quote('Tony','I have died many times. I have actually beaten Jesus Christ because he only died once')
 
   ];
   myFav = this.quotes[0] 
-  
+  newQuote(){
+    
+
+  }
 }

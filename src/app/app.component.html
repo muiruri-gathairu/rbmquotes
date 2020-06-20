@@ -22,15 +22,17 @@
     <div class="col-md-8" id="row1"><span class="shar">rbm</span>QUOTES<br/><br/>
       <ul class="lid">
         <li *ngFor="let quote of quotes" id="w123w">
-          {{ quote.name + ' ' + quote.username + ' ' + ' - rm'}}<hr id="hre"/>
+          {{ quote.name }}<br/><span id="hhh">{{quote.username}}</span><hr id="hre"/>
         </li>
       </ul>
     </div>
     <div class="col-md-4" id="row2"><span class="shar">Share</span> Quote
       <form><br/>
-        <input id="hh" type="text" ng-model="">
+        <input id="hh" type="text" ng-model="quote.name">
         <br/><br/>
-        <input type="text" ng-model=''>
+        <input type="text" ng-model='quote.username'>
+        <br><br>
+        <button class="btn btn-success" type="submit" (click)="newQuote()">post</button>
       </form>
     </div>
   </div>

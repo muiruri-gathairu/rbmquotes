@@ -16,6 +16,7 @@ h3,h6 {
 
 #row1 {
     padding-left: 100px;
+    padding-right: 100px;
 }
 
 #row2 {
@@ -36,6 +37,10 @@ h3,h6 {
 
 #hh {
     padding-bottom: 40px;
+}
+
+#hhh{
+    padding-left: 80px;
 }
 
 input {
