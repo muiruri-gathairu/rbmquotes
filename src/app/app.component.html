@@ -22,14 +22,12 @@
     <div class="col-md-8" id="row1"><span class="shar">rbm</span>QUOTES<br/><br/>
       <ul class="lid">
         <li *ngFor="let quote of quotes" id="w123w">
-          {{ quote.name }}<hr id="hre"/>
+          {{ quote.name + ' ' + quote.username + ' ' + ' - rm'}}<hr id="hre"/>
         </li>
       </ul>
     </div>
     <div class="col-md-4" id="row2"><span class="shar">Share</span> Quote
-      <app-quoteform></app-quoteform>
     </div>
   </div>
 </body>
 </html>
-   

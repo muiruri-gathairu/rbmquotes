@@ -16,6 +16,6 @@ export class AppComponent {
     new Quote('Tornado','ggggggg')
 
   ];
-  myFav = this.quotes[0];
+  myFav = this.quotes[0] 
   
 }

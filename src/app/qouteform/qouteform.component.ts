@@ -10,9 +10,6 @@ import { Quote }    from '../quote';
 export class QuoteFormComponent {
 
 
-
-  model = new Quote('fg','hh');
-
   submitted = false;
 
   onSubmit() { this.submitted = true; }
