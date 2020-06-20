@@ -10,7 +10,7 @@ import { QlistviewComponent } from './qlistview/qlistview.component';
   declarations: [
     AppComponent,
     QuotelistComponent,
-    QlistviewComponent
+    QlistviewComponent,
   ],
   imports: [
     BrowserModule,
